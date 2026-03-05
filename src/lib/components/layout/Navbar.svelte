@@ -63,6 +63,11 @@
 
 <style>
     @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+    body {
+        font-family: "Satoshi Variable", "Satoshi", sans-serif;
+        background: #070712;
+        color: #fafaff;
+    }
     .navbar {
         background: #07071c;
         width: 100%;
