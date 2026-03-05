@@ -1,12 +1,10 @@
 <script lang="ts">
     let isOpen: boolean = false;
     let active: string = "Platform";
-
     interface NavLink {
         label: string;
         href: string;
     }
-
     const links: NavLink[] = [
         { label: "Platform", href: "#" },
         { label: "Solutions", href: "#" },
@@ -14,7 +12,6 @@
         { label: "Resources", href: "#" },
         { label: "Pricing", href: "#" },
     ];
-
     function handleClick(label: string): void {
         active = label;
         isOpen = false;
@@ -23,10 +20,7 @@
 
 <header class="navbar">
     <div class="container">
-        <!-- Logo -->
         <a href="/" class="logo">comet<b>chat</b></a>
-
-        <!-- Desktop Nav -->
         <nav class="nav">
             {#each links as link}
                 <a
@@ -38,14 +32,10 @@
                 </a>
             {/each}
         </nav>
-
-        <!-- Right Actions -->
         <div class="actions">
             <a href="#" class="login">Log in</a>
             <a href="#" class="cta">Schedule a demo</a>
         </div>
-
-        <!-- Mobile Toggle -->
         <button
             class="menu-toggle"
             aria-label="Toggle menu"
@@ -54,7 +44,6 @@
             ☰
         </button>
     </div>
-
     {#if isOpen}
         <div class="mobile-menu">
             {#each links as link}
@@ -66,7 +55,6 @@
                     {link.label}
                 </a>
             {/each}
-
             <a href="#" class="login">Log in</a>
             <a href="#" class="cta">Schedule a demo</a>
         </div>
@@ -75,7 +63,6 @@
 
 <style>
     @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
-
     .navbar {
         background: #07071c;
         width: 100%;
@@ -83,7 +70,6 @@
         top: 0;
         z-index: 1000;
     }
-
     .container {
         max-width: 1200px;
         margin: 0 auto;
@@ -92,8 +78,6 @@
         align-items: center;
         justify-content: space-between;
     }
-
-    /* Logo */
     .logo {
         font-family: "Inter", sans-serif;
         font-size: 18px;
@@ -101,13 +85,10 @@
         text-decoration: none;
         letter-spacing: -0.2px;
     }
-
-    /* Nav Links */
     .nav {
         display: flex;
         gap: 36px;
     }
-
     .nav a {
         font-family: "Inter", sans-serif;
         font-size: 12.5px;
@@ -116,37 +97,28 @@
         text-decoration: none;
         transition: color 0.2s ease;
     }
-
     .nav a:hover {
         color: #ffffff;
     }
-
-    /* ACTIVE COLOR */
     .nav a.active,
     .mobile-menu a.active {
         color: rgb(140, 124, 224);
         font-weight: 400;
     }
-
-    /* Actions */
     .actions {
         display: flex;
         align-items: center;
         gap: 22px;
     }
-
     .login {
         font-family: "Inter", sans-serif;
         font-size: 12.5px;
         color: #b8b8c7;
         text-decoration: none;
     }
-
     .login:hover {
         color: #ffffff;
     }
-
-    /* CTA Button */
     .cta {
         font-family: "Inter", sans-serif;
         font-size: 12px;
@@ -161,13 +133,10 @@
             transform 0.15s ease,
             box-shadow 0.15s ease;
     }
-
     .cta:hover {
         transform: translateY(-1px);
         box-shadow: 0 6px 24px rgba(123, 97, 255, 0.4);
     }
-
-    /* Mobile */
     .menu-toggle {
         display: none;
         font-size: 22px;
@@ -176,7 +145,6 @@
         color: white;
         cursor: pointer;
     }
-
     .mobile-menu {
         display: flex;
         flex-direction: column;
@@ -184,7 +152,6 @@
         padding: 20px 24px;
         background: #0d0d26;
     }
-
     @media (max-width: 900px) {
         .nav,
         .actions {
