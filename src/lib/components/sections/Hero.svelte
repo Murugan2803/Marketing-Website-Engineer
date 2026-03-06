@@ -40,13 +40,13 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 80px 20px;
+    padding: 20px 20px;
     color: white;
   }
   .wrapper {
     width: 100%;
     max-width: 1200px;
-    margin: auto;
+    margin: 10px 70px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;

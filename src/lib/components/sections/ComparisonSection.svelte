@@ -137,12 +137,12 @@
             0 0 16px rgba(139, 124, 255, 0.6),
             0 0 30px rgba(139, 124, 255, 0.4);
     }
-    @media (max-width: 900px) {
+    /* @media (max-width: 900px) {
         .left,.features {
             align-items: flex-start;
             text-align: left;
         }
-    }
+    } */
     @media (max-width: 500px) {
         .row {
             flex-direction: column;
@@ -156,10 +156,10 @@
         }
     }
     @media (max-width: 480px) {
-        .left,.features {
+        /* .left,.features {
             align-items: flex-start;
             text-align: left;
-        }
+        } */
         .title {
             font-size: 26px;
         }

@@ -62,6 +62,9 @@
     margin: 0;
     opacity: 0.74;
   }
+  .left,.right{
+    margin-top: 90px;
+  }
   .right {
     display: flex;
     justify-content: center;

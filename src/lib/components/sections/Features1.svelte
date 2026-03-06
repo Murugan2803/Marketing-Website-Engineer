@@ -13,7 +13,7 @@
 
 <section class="hero">
     <div class="container">
-        <div class="content">
+        <div class="left">
             <p class="tag">Production-ready chat UI</p>
             <h3 class="title">
                 The UX layer your agent deserves.<br />
@@ -46,8 +46,8 @@
 
 <style>
     .hero {
-        background: #0a0a12;
-        padding: 120px 40px;
+       background: #070614;
+        padding: 80px 40px;
     }
     .container {
         max-width: 1200px;
@@ -58,7 +58,7 @@
         gap: 80px;
         align-items: center;
     }
-    .content {
+    .left {
         display: flex;
         flex-direction: column;
         gap: 16px;
@@ -163,7 +163,7 @@
             grid-template-columns: 1fr;
             gap: 48px;
         }
-        .content {
+        .left {
             align-items: flex-start;
             text-align: left;
             max-width: 100%;
@@ -189,3 +189,7 @@
         }
     }
 </style>
+
+
+
+
