@@ -9,11 +9,15 @@
 
 <div class="left">
     <h2 class="title">
-        Everything your agent needs to go from prototype to product – fixed.
+        Everything your agent <br/>
+        needs to go from <br/>
+        prototype to product –<br/>
+        fixed.
     </h2>
 
     <p class="description">
-        Modular when you want control. All-in-one when you just need to launch.
+        Modular when you want control. All-in-one when<br/>
+         you just need to launch.
     </p>
 </div>
 
@@ -44,15 +48,15 @@
     } */
     .title {
         font-family: "Satoshi Variable", sans-serif;
-        font-weight: 400;
-        font-size: clamp(28px, 4vw, 46px);
+        font-weight: 500;
+        font-size: clamp(28px, 4vw, 38px);
         line-height: 1.1;
         color: #fafaff;
     }
     .description {
         font-family: "Satoshi Variable", sans-serif;
         font-weight: 500;
-        font-size: clamp(15px, 2vw, 22px);
+        font-size: clamp(15px, 2vw, 18px);
         line-height: 1.4;
         color: #fafaff;
         opacity: 0.74;
@@ -133,15 +137,12 @@
             0 0 16px rgba(139, 124, 255, 0.6),
             0 0 30px rgba(139, 124, 255, 0.4);
     }
-    /* @media (max-width: 1024px) {
-        .container {
-            grid-template-columns: 1fr;
-            gap: 60px;
+    @media (max-width: 900px) {
+        .left,.features {
+            align-items: flex-start;
+            text-align: left;
         }
-        .left-content {
-            max-width: 100%;
-        }
-    } */
+    }
     @media (max-width: 500px) {
         .row {
             flex-direction: column;
@@ -155,6 +156,10 @@
         }
     }
     @media (max-width: 480px) {
+        .left,.features {
+            align-items: flex-start;
+            text-align: left;
+        }
         .title {
             font-size: 26px;
         }

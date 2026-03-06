@@ -20,8 +20,8 @@
         notifications, and analytics — just to get your agent into users' hands?
       </p>
       <p class="desc">
-        CometChat gives you the entire frontend + infra layer. Full stack.
-        Modular. Production-ready.
+        CometChat gives you the entire frontend + infra layer.<br/>
+        Full stack. Modular. Production-ready.
       </p>
       <div class="buttons">
         <button class="outline">Schedule a Demo</button>
@@ -53,6 +53,7 @@
     gap: 60px;
   }
   .content {
+    padding-left: 10px;
     text-align: left;
   }
   .badge {
@@ -89,9 +90,12 @@
     line-height: 1;
   }
   h1 {
-    font-size: 50px;
+    font-family: "Satoshi Variable", sans-serif;
+    font-weight: 500;
+    font-size: clamp(20px, 3vw, 36px);
     line-height: 1.1;
     margin-bottom: 25px;
+    letter-spacing: 2px;
   }
   h1 span {
     background: linear-gradient(90deg, #a78bfa, #6366f1);
@@ -99,7 +103,10 @@
     -webkit-text-fill-color: transparent;
   }
   .desc {
-    font-size: 18px;
+    font-family: "Satoshi Variable", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
     color: #bdbdcf;
     margin-bottom: 15px;
     max-width: 520px;
@@ -136,6 +143,11 @@
     width: 100%;
     max-width: 550px;
   }
+  @media (max-width: 1200px){
+    .content{
+      padding-left: 10px;
+    }
+  }
   @media (max-width: 992px) {
     .wrapper {
       gap: 40px;
@@ -147,11 +159,11 @@
   @media (max-width: 768px) {
     .wrapper {
       grid-template-columns: 1fr;
-      text-align: center;
+      text-align: left;
     }
     .content {
       order: 1;
-      text-align: center;
+      text-align: left;
     }
     .image {
       order: 2;

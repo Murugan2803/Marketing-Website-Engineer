@@ -1,27 +1,24 @@
 <script>
   import imageUrl from "$lib/assets/Circle_img.png";
   const features = [
+    "A complete frontend and system layer for AI agents. Plug in your LLM backend or build the brain with ours.",
     "CometChat is the only full stack agent platform that combines logic, UI, moderation, notifications, and insights – without glue code.",
     "Each of these is battle-tested, used and trusted in production by real companies, across real user scenarios.",
   ];
 </script>
 
 <div class="left">
- <h2 class="title">
-      Everything you’d end up <span class="gradient">already done.</span>
-    </h2>
-  <p class="subtitle">
-    A complete frontend and system layer for AI agents. Plug in your LLM backend
-    or build the brain with ours.
-  </p>
-  <ul class="feature-list">
-    {#each features as feature}
-      <li class="feature">
-        <span class="icon">✦</span>
-        <p>{feature}</p>
-      </li>
-    {/each}
-  </ul>
+  <h2 class="title">
+        Everything you’d end up <span class="gradient">already done.</span>
+      </h2>
+    <ul class="feature-list">
+      {#each features as feature}
+        <li class="feature">
+          <span class="icon">✦</span>
+          <p>{feature}</p>
+        </li>
+      {/each}
+    </ul>
 </div>
 <div class="right">
   <img src={imageUrl} alt="AI Agent Diagram" />
@@ -43,10 +40,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  .subtitle {
+  /* .subtitle {
     font-size: clamp(16px, 1.6vw, 22px);
     opacity: 0.74;
-  }
+  } */
   .feature-list {
     list-style: none;
     padding: 0;

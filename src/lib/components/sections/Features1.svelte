@@ -104,7 +104,7 @@
         align-items: flex-start;
         font-family: "Satoshi Variable", sans-serif;
         font-weight: 400;
-        font-size: clamp(13px, 1.4vw, 14px);
+        font-size: clamp(13px, 1.4vw, 16px);
         line-height: 130%;
         letter-spacing: 0.005em;
 
@@ -146,14 +146,13 @@
             font-size: 18px;
             line-height: 1.2;
         }
-
         .desc {
-            font-size: 14px;
+            font-size: 16px;
         }
-
         .features li {
             justify-content: flex-start;
             text-align: left;
+            font-size: 14px;
         }
     }
     @media (max-width: 900px) {
@@ -170,11 +169,11 @@
             max-width: 100%;
         }
         .title {
-            font-size: 18px;
+            font-size: 20px;
             line-height: 1.2;
         }
         .desc {
-            font-size: 14px;
+            font-size: 16px;
         }
         .features li {
             justify-content: flex-start;
@@ -186,7 +185,7 @@
             padding: 0px;
         }
         .features li {
-            font-size: 13px;
+            font-size: 14px;
         }
     }
 </style>

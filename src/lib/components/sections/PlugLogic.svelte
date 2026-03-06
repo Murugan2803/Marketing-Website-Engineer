@@ -16,7 +16,7 @@
         <p>Visual Agent Builder.</p>
       </div>
 
-    </div>
+    </div>  
   </div>
 </section>
 
