@@ -156,29 +156,62 @@
       font-size: 44px;
     }
   }
-  @media (max-width: 768px) {
-    .wrapper {
+  @media (max-width: 768px){
+    .hero{
+      padding: 60px 20px;
+    }
+    .wrapper{
       grid-template-columns: 1fr;
+      margin: 0;
+      gap: 30px;
       text-align: left;
     }
-    .content {
-      order: 1;
+    .content{
+      padding-left: 0;
       text-align: left;
     }
-    .image {
-      order: 2;
-      justify-content: center;
-      margin-top: 40px;
+    h1{
+      font-size: 32px;
+      letter-spacing: 1px;
     }
-    .buttons {
-      justify-content: center;
+    .desc{
+      font-size: 16px;
+      line-height: 1.5;
+      margin-left: 0;
+      margin-right: 0;
     }
-    h1 {
-      font-size: 36px;
+    .buttons{
+      justify-content: flex-start;
+      flex-direction: column;
+      width: 100%;
     }
-    .desc {
-      margin-left: auto;
-      margin-right: auto;
+    .buttons button{
+      width: fit-content;
+    }
+    .image{
+      justify-content: flex-start;
+      margin-top: 20px;
+    }
+    .image img{
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 480px){
+    .badge{
+      font-size: 12px;
+      padding: 4px 12px 4px 4px;
+    }
+    h1{
+      font-size: 26px;
+      line-height: 1.2;
+    }
+    .desc{
+      font-size: 14px;
+    }
+    .primary,
+    .outline{
+      padding: 12px 18px;
+      font-size: 14px;
     }
   }
 </style>
