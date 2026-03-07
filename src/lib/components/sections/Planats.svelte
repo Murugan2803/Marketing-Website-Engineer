@@ -27,9 +27,8 @@
     </p>
   </div>
   <div class="cta">
-    <button class="btn-outline"> Talk to Us </button>
+    <button class="btn-outline">Talk to Us</button>
     <button class="btn-primary">
-      <span class="highlight"></span>
       Try the Agent Builder
     </button>
   </div>
@@ -131,29 +130,54 @@
     opacity: 0.74;
     margin-top: 20px;
   }
-  .cta { 
-    margin-top: 
-    30px; display:
-    flex; justify-content: center;
-    gap: 16px;
-   }
+  .cta {
+    font-family: "Satoshi Variable", sans-serif;
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 3;
+  }
   .btn-outline {
     padding: 12px 22px;
-    border-radius: 12px;
+    border-radius: 14px;
     font-size: 14px;
     cursor: pointer;
-    background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: white;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.18);
+    color: #ffffff;
+    transition: all 0.25s ease;
+  }
+  .btn-outline:hover {
+    background: rgba(111,92,255,0.35);
+    border-color: rgba(255,255,255,0.35);
   }
   .btn-primary {
-    padding: 12px 22px;
-    border-radius: 12px;
+    padding: 12px 24px;
+    border-radius: 14px;
     font-size: 14px;
     cursor: pointer;
     border: none;
     color: white;
-    background: linear-gradient(90deg, #6f5cff, #9a86ff);
+    background: linear-gradient(
+      135deg,
+      #6f5cff 0%,
+      #8b7bff 50%,
+      #a594ff 100%
+    );
+    box-shadow:
+      0 6px 20px rgba(111,92,255,0.35),
+      inset 0 1px 0 rgba(255,255,255,0.15);
+    transition: all 0.25s ease;
+  }
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow:
+      0 10px 30px rgba(111,92,255,0.5),
+      inset 0 1px 0 rgba(255,255,255,0.2);
   }
   @media (max-width: 1024px) {
     .hero {

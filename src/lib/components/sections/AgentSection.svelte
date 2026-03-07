@@ -42,40 +42,29 @@
 <section class="section">
     <div class="heading">
         <p class="tag">Chat integration options</p>
-
         <h1 class="title">Your launch, your way. Done right.</h1>
-
         <p class="sub">
             Start with what gets you to production fastest — or matches your
             needs the best.<br />
             Swap it out or level it up later.
         </p>
     </div>
-
-    <!-- TOP GRID LINE -->
     <div class="grid-line top"></div>
-
     <div class="cards">
         {#each cards as card}
             <div class="card">
                 <div class="icon">{card.icon}</div>
-
                 <h3>{card.title}</h3>
-
                 <p class="desc">{card.desc}</p>
-
                 <ul class="features">
                     {#each card.features as feature}
                         <li>✦ {feature}</li>
                     {/each}
                 </ul>
-
                 <a href="#">{card.link}</a>
             </div>
         {/each}
     </div>
-
-    <!-- BOTTOM GRID LINE -->
     <div class="grid-line bottom"></div>
 </section>
 
@@ -86,22 +75,17 @@
         color: white;
         text-align: center;
     }
-
-    /* TEXT */
-
     .tag {
         font-family: "Satoshi Variable", sans-serif;
         font-size: clamp(16px, 2vw, 22px);
         color: #6852d6;
     }
-
     .title {
         font-family: "Satoshi Variable", sans-serif;
         font-size: clamp(24px, 4vw, 36px);
         color: #fafaff;
         margin-top: 10px;
     }
-
     .sub {
         font-family: "Satoshi Variable", sans-serif;
         font-size: clamp(14px, 1.5vw, 16px);
@@ -109,18 +93,12 @@
         opacity: 0.74;
         margin-top: 10px;
     }
-
-    /* GRID LINES */
-
     .grid-line {
         width: 100%;
         height: 1px;
         background: rgba(255, 255, 255, 0.1);
         margin: 40px 0;
     }
-
-    /* CARDS GRID */
-
     .cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -128,29 +106,19 @@
         max-width: 1200px;
         margin: auto;
     }
-
-    /* TABLET */
-
     @media (max-width: 1024px) {
         .cards {
             grid-template-columns: repeat(2, 1fr);
         }
     }
-
-    /* MOBILE */
-
     @media (max-width: 640px) {
         .cards {
             grid-template-columns: 1fr;
         }
-
         .grid-line {
             display: none;
         }
     }
-
-    /* CARD */
-
     .card {
         position: relative;
         padding: 40px 30px;
@@ -161,9 +129,6 @@
         transition: 0.35s ease;
         overflow: hidden;
     }
-
-    /* ICON */
-
     .icon {
         width: 48px;
         height: 48px;
@@ -176,9 +141,6 @@
         margin-bottom: 20px;
         font-size: 20px;
     }
-
-    /* GLOW EFFECT */
-
     .card::before {
         content: "";
         position: absolute;
@@ -192,30 +154,21 @@
         transition: 0.35s;
         filter: blur(40px);
     }
-
     .card:hover::before {
         opacity: 1;
     }
-
     .card:hover {
         transform: translateY(-6px) scale(1.02);
         border-color: rgba(130, 100, 255, 0.4);
     }
-
-    /* TEXT */
-
     h3 {
         margin-bottom: 14px;
         font-size: 20px;
     }
-
     .desc {
         color: #9aa0b3;
         transition: 0.3s;
     }
-
-    /* FEATURES */
-
     .features {
         list-style: none;
         padding: 0;
@@ -228,25 +181,17 @@
         font-size: 14px;
         line-height: 1.6;
     }
-
     .features li {
         margin-bottom: 6px;
     }
-
-    /* HOVER CONTENT CHANGE */
-
     .card:hover .desc {
         opacity: 0;
         max-height: 0;
     }
-
     .card:hover .features {
         opacity: 1;
         max-height: 300px;
     }
-
-    /* LINK */
-
     a {
         display: inline-block;
         margin-top: 20px;
@@ -254,7 +199,6 @@
         font-size: 14px;
         text-decoration: none;
     }
-
     a:hover {
         text-decoration: underline;
     }
