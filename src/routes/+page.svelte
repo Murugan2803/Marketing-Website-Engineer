@@ -8,6 +8,8 @@
     import Features1 from '$lib/components/sections/Features1.svelte';
     import SectionWrapper from '$lib/components/wrapper/SectionWrapper.svelte';
     import ComparisonSection from '$lib/components/sections/ComparisonSection.svelte';
+    import AgentSection from '$lib/components/sections/AgentSection.svelte';
+    import Planats from '$lib/components/sections/Planats.svelte';
 </script>
 
 <Navbar />
@@ -23,3 +25,5 @@
 <Features1 />
 <PlugLogic />
 <FinalCTA />
+<AgentSection />
+<Planats />
