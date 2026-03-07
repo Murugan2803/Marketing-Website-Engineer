@@ -36,7 +36,7 @@
 
 <style>
   .hero {
-    background: #05050f;
+    background: #070614;
     min-height: 850px;
     text-align: center;
     overflow: hidden;
@@ -110,7 +110,7 @@
     transform: translateX(-50%);
     width: 2000px;
     height: 1000px;
-    background: #02030a;
+    background: #070614;
     border-radius: 1000px 1000px 0 0;
   }
   .content {
