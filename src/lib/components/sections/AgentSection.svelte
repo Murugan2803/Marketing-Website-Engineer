@@ -70,7 +70,7 @@
 
 <style>
     .section {
-        background: #050510;
+        background: #070614;
         padding: clamp(20px, 8vw, 50px) 6%;
         color: white;
         text-align: center;
